@@ -1,0 +1,54 @@
+.animal-container {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(4,60px);
+    gap : 3px;
+    border: 1px solid darkblue;
+    padding: 3px;
+    padding-bottom: 15px;
+    width: fit-content;   
+}
+
+.animal-container > span {
+    box-shadow: 1px 1px darkgray;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+#mouse {
+    background: linear-gradient(180deg, rgb(131, 184, 140) 51%, rgb(154, 225, 128) 100%);
+}
+#bufalo {
+    background: linear-gradient(180deg, rgb(229, 115, 148) 51%, rgb(139, 37, 37) 100%);
+}
+#tiger {
+    background: linear-gradient(180deg, rgb(118, 180, 227) 51%, rgb(31, 92, 158) 100%);
+}
+#cat {
+    background: linear-gradient(180deg, rgb(231, 155, 138) 51%, rgb(192, 171, 118) 100%);
+}
+#dragon {
+    background: linear-gradient(180deg, rgb(178, 97, 205) 40%, rgb(211, 184, 220) 100%);
+}
+#snake {
+    background: linear-gradient(180deg, rgb(218, 174, 116) 40%, rgb(220, 157, 61) 100%);
+}
+#horse {
+    background: linear-gradient(180deg, rgb(131, 184, 140) 51%, rgb(154, 225, 128) 100%);
+}
+#goat {
+    background: linear-gradient(180deg, rgb(229, 115, 148) 51%, rgb(139, 37, 37) 100%);
+}
+#monkey {
+    background: linear-gradient(180deg, rgb(118, 180, 227) 51%, rgb(31, 92, 158) 100%);
+}
+#chicken {
+    background: linear-gradient(180deg, rgb(231, 155, 138) 51%, rgb(192, 171, 118) 100%);
+}
+#dog {
+    background: linear-gradient(180deg, rgb(178, 97, 205) 40%, rgb(211, 184, 220) 100%);
+}
+#pig {
+    background: linear-gradient(180deg, rgb(218, 174, 116) 40%, rgb(220, 157, 61) 100%);
+}

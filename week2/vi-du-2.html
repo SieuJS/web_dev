@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navigation{
+            background: linear-gradient(180deg, rgb(66, 141, 222) 40%, rgb(131, 183, 205) 99%);
+            display: flex;
+        }
+
+        .navigation > span {
+            margin: 10px;
+            color: aliceblue;
+        }
+
+        .main-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 8rem;
+            height: 45vh;
+        }
+
+        .icon{
+            text-align: center;
+            font-size: 6rem;
+            border: 1px solid black;
+        }
+
+        .sub-images > .icon{
+            padding-top: 25%;
+            padding-bottom: 25%;
+            background-color: rgb(55, 53, 53);
+            margin: 15px 10px 15px;
+            box-sizing: border-box;
+        }
+
+        .sub-images{
+            background-color: rgb(86, 111, 203);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            gap : 20px;
+            height: max-content;
+        }
+
+        @media (max-width : 599px) {
+            .sub-images {
+                display : flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .navigation {
+                flex-direction: column;
+            }
+            .navigation > span {
+                width: 100%;
+            }
+        }
+
+        @media (min-width : 600px) and (max-width : 959px) {
+            .sub-images{
+                display: grid;
+                grid-template-columns: auto auto;
+                
+            }
+            #contact {
+                margin-left : auto;
+            }
+        }
+        
+        @media (min-width : 960px) {
+            .sub-images{
+                display: grid;
+                grid-template-rows: 150px 150px;
+                grid-template-columns: repeat(auto-fill, 150px) ;
+                gap:10px;
+                
+            }
+
+            .sub-images >.icon{
+                padding: 0;
+                height: fit-content;
+            }
+            #contact {
+                margin-left : auto;
+            }
+            
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <span>About</span>
+        <span>Product</span>
+        <span>Our team</span>
+        <span id = "contact">Contact</span>
+    </div>
+    <div class="main-image">
+        <span class = "icon">🌃</span>
+    </div>
+    <div class="sub-images">
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+        <span class = "icon">🌃</span>
+    </div>
+
+</body>
+</html>

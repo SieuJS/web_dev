@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chess-table{
+            display: grid;
+            width: 800px;
+            grid-template-columns: repeat(8,1fr);
+        }
+
+        .cell {
+            width: 100px;
+            height: 100px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .black {
+            background-color: #b58863;
+            
+        }
+        .white{
+            background-color: #f0d9b5;
+        }
+        img {
+            max-width: 50px;
+            max-height: 50px ;
+            padding:0;
+        }
+        .chess-black {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="chess-table">
+    </div>
+    <script type = "module" src = "./chess.js" ></script>
+    <script type = "module" src = "./index.js"> </script>
+
+</body>
+
+</html>
