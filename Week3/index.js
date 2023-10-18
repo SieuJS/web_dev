@@ -3,19 +3,10 @@ const cell = document.createElement('div');
 const chessTable = document.querySelector('.chess-table');
 const colors = ['white', 'black'];
 const startAscii = 65;
-import ChessPiece from './chess.js'
-
+// import chessPiece from './models/chess.js'
+import initDD from './utils/drag-drop.js'
 // Create cell 
 const chessBoard = [];
-
-class Cell  {
-    constructor (color, coor ){
-        this.entity = document.createElement('div');
-        this.entity.classList.add ("cell");
-        this.entity.classList.add (color);
-        this.coor = coor;
-    }
-}
 
 const createCell = (kind) => {
     const newEle = document.createElement('div');
@@ -38,6 +29,11 @@ for(let i = 0; i < 8; i ++){
         chessBoard[i].push(sec)
    }
 }
+
+
+const strongChess = [
+    "rook" , "hourse" , "bishop", "queen", "king"
+]
 
 class chessPiece {
     constructor(col, row, color, pieceType) {
@@ -81,19 +77,17 @@ class chessPiece {
         // Return true if the move is valid, false otherwise
     }
 }
-
-const strongChess = [
-    "rook" , "hourse" , "bishop", "queen", "king"
-]
-
 // set chess on board 
 //set black 
 // loop for black pawn 
 const setupChess = (color, pawnIndex, strongIndex) => {
     for(let i = 0 ; i < 8; i ++){
         const pawn = new chessPiece(1,i,color,"pawn")
+        initDD(pawn.entity);
         chessBoard[pawnIndex][i].appendChild(pawn.entity);
         const strong = new chessPiece(0,i > 4 ? 16 -(i+4) : i,color,strongChess[i > 4 ? i-5:i])
+        initDD(strong.entity)
+        console.log(strong.entity)
         chessBoard[strongIndex][i > 4 ? 16 -(i+4):i].appendChild(strong.entity);
     }
 }

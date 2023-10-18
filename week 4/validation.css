@@ -1,0 +1,8 @@
+.error {
+    border: 1px solid red;
+}
+.error-notice {
+    width: 50%;
+    color: red;
+    text-align: left;
+}

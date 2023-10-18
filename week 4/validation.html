@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validation.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="form-section" id="myForm" novalidate>
+    <div class="my-form">
+
+        <div class="input">
+          <label for="name-input">Họ và tên</label>
+          <input class="text" type="text" id="name-input" />
+
+        </div>
+        <span id="name-error" class="error-notice"></span>
+        <div class="input">
+          <label for="address-input">Địa chỉ</label>
+          <input class="text" type="text" id="address-input" />
+
+        </div>
+        <span id="address-error" class="error-notice"></span>
+        <div class="input">
+          <label for="phone-input">Điện thoại</label>
+          <input class="text" type="text" id="phone-input" />
+
+        </div>
+
+        <span id="phone-error" class="error-notice"></span>
+        <div class="input">
+          <label for="sex">Giới tính</label>
+          <div id="sex">
+            <input type="radio" id="male" name="sex" value="male" />
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="sex" value="female" />
+            <label for="female">Nữ</label>
+
+          </div>
+        </div>
+        <span id="sex-error" class="error-notice"></span>
+        <div class="input">
+          <label for="delivery">Ngày giao hàng</label>
+          <input class="text" type = "date" required ="none"  id="delivery" />
+        </div>
+        <span id="delivery-error" class="error-notice"></span>
+        <div class="input">
+          <label for="email">Email</label>
+          <input class="text" id="email" />
+
+        </div>
+        <span id="email-error" class="error-notice"></span>
+        <!-- -------------------------------------- Product Input ------------------------------------- -->
+        <div >
+          <button type="submit" id="submit">Đăng ký</button>
+          <button type = "button" id = "reset-button" >Xoá hết</button>
+        </div>
+    </form>
+    <script src="validation.js"></script>
+</body>
+</html>

@@ -27,6 +27,10 @@
         .white{
             background-color: #f0d9b5;
         }
+        .piece { 
+            position: relative;
+            pointer-events: auto;
+        }
         img {
             max-width: 50px;
             max-height: 50px ;
@@ -38,9 +42,14 @@
     </style>
 </head>
 <body>
-    <div class="chess-table">
+    <div class = "air">
+        <div class="chess-table">
+        </div>
     </div>
-    <script type = "module" src = "./chess.js" ></script>
+
+    
+    <script type = "module"  src = "./utils/drag-drop.js" ></script>
+    <script type = "module"  src = "./models/chess.js" ></script>
     <script type = "module" src = "./index.js"> </script>
 
 </body>
