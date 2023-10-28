@@ -7,3 +7,7 @@
 .content {
     height: 80vh;
 }
+
+.user-img{
+    min-height: 213px;
+}
