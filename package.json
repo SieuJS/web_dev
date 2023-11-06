@@ -1,0 +1,20 @@
+{
+  "name": "week7-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "install express",
+    "start" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "webdev"
+  },
+  "author": "sieujs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
