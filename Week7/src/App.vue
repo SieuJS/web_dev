@@ -9,9 +9,13 @@ import MainContent from './components/main-content/MainContent.vue'
 <template>
   <HeadBanner/>
   <MainNavigation/>
-  <div class="d-grid mt-3">
-      <SideHeader class = "g-col-6 bg-light "></SideHeader>
-      <MainContent class="g-col-6 bg-light"/>
+  <div class = "row mt-3 g-1">
+      <div id="side" class = "col-3">
+        <SideHeader class = "card"/>
+      </div>
+      <div id = "content" class = "col-9">
+        <MainContent class = "card"/>
+      </div>
   </div>
 </template>
 
@@ -27,6 +31,6 @@ export default {
 
 <style>
 
-
+  
 
 </style>
